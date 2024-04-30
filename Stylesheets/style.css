@@ -1,0 +1,151 @@
+*{
+    box-sizing:border-box; 
+}
+body{
+    margin: 0px;
+    background-color: rgb(71, 121, 165);
+    background-image: url(../Images/Sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*covers and scales*/
+}
+main{
+    padding: 0 20px;
+}
+header{
+    background-image: url(../Images/Pastel.gif);
+    padding:15px;
+}
+#title{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    text-shadow: 2px 2px 10px rgb(102, 102, 189);
+}
+/*Navigation Bar*/
+.navbar{
+    margin-bottom: 20px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(103, 106, 131);
+    padding:0px;
+    margin:0px;
+    overflow: hidden; /**/
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px;
+    display:block;
+    text-align:center;
+} /*This creates a vertical navigation bar*/
+.navbar a:hover{
+    background-color: rgba(66, 66, 66, 0.363);
+    text-decoration: underline;
+}
+.navbar li{
+    float: left; /*changes navigation bar to horizontal*/
+}
+.song{
+    color:white;
+}
+/*Dropdown Menu*/
+.dropdown{
+    display:inline-block;
+    /*important: with this, the dropdown will only activate when the button is hovered over,
+    without it, any value is fine as long as it's within the line.*/
+}
+.dropdown button{
+    background-color: rgb(103, 106, 131);
+    padding:15px;
+    color:white;    
+    border:none;
+}
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .dropdownitems{
+    display:none; /*make it dissapear first, it will only appear when hovered*/
+    position: absolute;
+    background-color:rgb(185, 185, 185);
+    min-width: 100px;
+    box-shadow:2px 2px 5px black;
+}
+.dropdown:hover .dropdownitems{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: rgba(66, 66, 66, 0.363);
+}
+.dropdown a:hover{
+    background-color: antiquewhite;
+}
+
+main{
+    padding-bottom:25px;
+}
+#content{
+    background-color: rgb(167, 170, 199);
+    border: 2px solid;
+    width: 60vw;
+    overflow:hidden;
+    padding:10px;
+    margin: 0 auto;
+}
+#content a{
+    text-decoration: none;
+    color:black;
+}
+.article:hover{
+    background-color: rgb(135, 158, 189);
+    color:white;
+    border-bottom: 1px black solid;
+    text-decoration: underline;
+}
+.summary{
+    clear:both;
+    width:100%;
+    background-color: rgb(82, 82, 82);
+    height:15vh;
+    min-height:130px;
+    border-radius: 10px;
+    margin-top:25px;
+}
+.summary div{
+    width:40%;
+    height:100%;
+    overflow:hidden;
+    color:white;
+    border-radius: 10px;
+    
+}
+.container{
+    clear:both;
+}
+.score{
+    background-color: rgb(236, 76, 76);
+    text-shadow: 2px 5px 10px rgb(255, 0, 0);
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    font-size:30px;
+    float:left;
+    margin-right:15px;
+}
+footer{
+    display: block;
+    clear:both;
+    background-color: rgb(177, 179, 173);
+    padding: 5px;
+}
+@media screen and (max-width:600px){
+    #content{
+        width:90%
+    }
+    #content iframe{
+        width:100%;
+    }
+}
+
