@@ -13,7 +13,7 @@ main{
 }
 header{
     background-image: url(../Images/Pastel.gif);
-    padding:15px;
+    padding:5px;
 }
 #title{
     text-align: center;
@@ -95,12 +95,7 @@ main{
     margin: 0 auto;
     animation-name: slideLeft;
     animation-duration: 1s;
-
 }
-/*#content:hover{
-    animation-name: hoverUp;
-    animation-duration: 1s;
-}*/
 #content a{
     text-decoration: none;
     color:black;
@@ -161,8 +156,19 @@ footer{
     50%{transform: translateY(-3px);}
 }
 @media screen and (max-width:1080px){
+    
+    header{
+        width:30vw;
+        font-size: 50%;
+        float:left;
+    }
+    .navbar{
+        height:100px;
+    }
+
     #content{
-        width:90%
+        width:90%;
+        animation-name: none;
     }
     #content iframe{
         width:100%;
